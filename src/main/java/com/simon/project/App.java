@@ -15,14 +15,14 @@ public class App
 {
     public static void main( String[] args ) throws InterruptedException {
 
-        File pathToBinary = new File("C:/Program Files (x86)/Mozilla Firefox/firefox.exe");
+        File pathToBinary = new File(/*Put your firefox.exe file path here, path should be in quotation marks*/);
         FirefoxBinary ffbinary = new FirefoxBinary(pathToBinary);
         FirefoxProfile ffprofile = new FirefoxProfile();
 
-        System.setProperty("webdriver.gecko.driver","C:/Users/Krolik/IdeaProjects/InstaLoader — backup/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver",/*Place geckodriver.exe path here, it's in project folder, remember about quotation marks*/);
 
         WebDriver driver = new FirefoxDriver(ffbinary, ffprofile);
-        driver.get("https://www.instagram.com/cybulsia"); //maffashion_official
+        driver.get(/*Put profile address here, use quotation marks*/);
 
 
 
