@@ -80,9 +80,7 @@ public class ImageScraper {
         scroller.scrollSomePixelsDown(0,pixelsToScroll);
         while(numberOf_Myci9 < _myci9ToLoad){
 
-            Thread.sleep(460);//(460)
-            /*Try this instead of use Thread.sleep() everywhere: WebElement myDynamicElement = (new WebDriverWait(driver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));*/
+            Thread.sleep(460);
             scroller.scrollSomePixelsDown(0,defaultStartScrollingPixels);
             defaultStartScrollingPixels+=1290;
 
@@ -132,8 +130,4 @@ public class ImageScraper {
             System.out.println(ex);
         }
     }
-
-
-
-
 }
